@@ -1,0 +1,14 @@
+We have different shapes to draw
+
+Common:
+    Data: Color
+    Methods: Draw & Compute area, but each one has different behaviour
+
+Special:
+    Triangle need 3 sides (or points).
+    Rectangle needs 4.
+    Circle needs center and radius
+
+
+
+Soon we will learn about inheritance

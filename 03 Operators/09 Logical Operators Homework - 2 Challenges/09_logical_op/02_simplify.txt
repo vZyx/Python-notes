@@ -1,0 +1,71 @@
+  T and T and F and T
+- F        [as all of them are and and one of them is F]
+========================================================================
+
+  T and T and F and T or T and T
+- T and T and F and T ==> Reduce to F
+- F or T ==> T
+========================================================================
+
+  T and T and T and T or T and (T or F)
+- (T or F) ==> Reduce to T
+- T and T and T and T or T and T
+- T and T and T and T ==> reduce to T
+- T or T and T
+- T and T  ==> Reduce to T
+- T or T ==> T
+========================================================================
+
+  T and T and T or T and (F or (T and (T and T)))
+- (T and T) ==> reduce to T
+- T and T and T or T and (F or (T and T))
+- (T and T) ==> reduce to T
+- T and T and T or T and (F or T)
+- (F or T) ==> reduce to T
+- T and T and T or T and T
+- T and T and T  ==> reduce to T
+- T or T and T
+- T and T ==> reduce to T
+- T or T ==> T
+========================================================================
+
+  T and T or T and F and T or T and T and F or (T and (T or F))
+- (T or F) ==> reduce to T
+- T and T or T and F and T or T and T and F or (T and T)
+- (T and T) ==> reduce to T
+- T and T or T and F and T or T and T and F or T
+- T and T ==> reduce to T
+- T or T and F and T or T and T and F or T
+- T and F and T ==> Reduce to F
+- T or F or T and T and F or T
+- T and F and T ==> Reduce to F
+- T or F or T and T and F or T
+- T and T and F ==> Reduce to F
+- T or F or F or T ==> T
+========================================================================
+
+  T and T or T and F and T or T and T and F or (T and (T or F))
+- (T or F) ==> reduce to T
+- T and T or T and F and T or T and T and F or (T and T)
+- (T and T) ==> reduce to T
+- T and T or T and F and T or T and T and F or T
+- (T and T) ==> reduce to T
+- T or whatever = T     [smart reduction]
+========================================================================
+
+  T and T or T and F and T or (T and T and F or (T and (T or F)))
+- Notice T and T or something = T, so we know the answer T
+========================================================================
+
+  (T and T or T and F and T or T) and T and F or (T and (T or F))
+- (T and (T or F)) ==> reduced in 2 steps to: T
+- (T and T or T and F and T or T) ==> (T or F or T) ==> T
+- So now is:
+- T and T and F or T ==> F or T ==> T
+========================================================================
+
+
+  T and T or T and (F and T or T and T) and F or (T and (T or F))
+- (T and (T or F)) ==> reduced in 2 steps to: T
+- (F and T or T and T) ==> (F or T) ==> T
+- T and T or T and T and F or T ==> T or F or T = T

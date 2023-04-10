@@ -1,0 +1,9 @@
+In a debate with a college:
+Be open for different views (e.g, 2 ways for the data members)
+Defend your choices with logical reasons
+Also understand your college choices & reasons
+A lot of areas are just vague. We may not know which direction is definitely the right way
+Minor design concerns are not like big ones. System design is more risky than a class design
+Find someone with more experience to help you make decisions
+Or put time limit: discuss for an hour, then vote.
+Red flag if discussions are very lengthy with a few "action items"
